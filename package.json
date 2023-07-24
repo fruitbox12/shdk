@@ -1,0 +1,41 @@
+{
+  "name": "nextjs-vercel-dashboard",
+  "version": "1.0.0",
+  "description": "A NextJS 13 Typescript pnmp based frontend dashboard using Vercel's dashboard layout and auth mechanism and navbar.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "jest"
+  },
+  "keywords": [
+    "nextjs",
+    "vercel",
+    "dashboard",
+    "typescript",
+    "pnmp",
+    "serverless",
+    "github"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "13.0.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "next-auth": "^3.29.0",
+    "@types/node": "^16.11.6",
+    "@types/react": "^17.0.37",
+    "typescript": "^4.5.2",
+    "pnpm": "^6.23.6"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.2",
+    "jest": "^27.4.3",
+    "ts-jest": "^27.0.7",
+    "eslint": "^8.3.0",
+    "eslint-config-next": "^12.0.4"
+  }
+}
