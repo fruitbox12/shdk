@@ -1,31 +1,15 @@
-1. Dependencies: NextJS, TypeScript, pnmp, Vercel, NextAuth, Github API, Serverless Functions API.
+Based on the user's prompt, the shared dependencies between the files we are generating are:
 
-2. Exported Variables: 
-   - In "lib/auth.ts": authInstance, useAuth, signIn, signOut.
-   - In "lib/projects.ts": projects, useProjects, createProject, deleteProject.
-   - In "lib/deploy.ts": deploy, useDeploy, createDeployment, deleteDeployment.
+1. '../public/vercel.svg': This is a shared resource file that is being imported in the Navbar.tsx component.
 
-3. Data Schemas: 
-   - User Schema: id, name, email, image.
-   - Project Schema: id, name, description, repoUrl, deployments.
-   - Deployment Schema: id, status, url, createdAt.
+2. './react': This is a package path from the next-auth package that is being imported in the auth.ts file.
 
-4. DOM Element IDs: 
-   - In "components/Navbar.tsx": navbar, signInButton, signOutButton.
-   - In "pages/dashboard/index.tsx": dashboard, projectsTab, deploymentsTab.
-   - In "pages/dashboard/projects/index.tsx": projectsList, newProjectButton.
-   - In "pages/dashboard/projects/[id].tsx": projectDetail, deleteProjectButton, deployButton.
-   - In "components/ProjectForm.tsx": projectForm, nameInput, descriptionInput, repoUrlInput, submitButton.
-   - In "components/DeployButton.tsx": deployButton.
+3. 'axios': This is a package that is being imported in the projects.ts file.
 
-5. Message Names: 
-   - signInSuccess, signInError, signOutSuccess, signOutError.
-   - createProjectSuccess, createProjectError, deleteProjectSuccess, deleteProjectError.
-   - createDeploymentSuccess, createDeploymentError, deleteDeploymentSuccess, deleteDeploymentError.
+4. '../../lib/auth': This is a module that is being imported in the [id].tsx file located in the projects directory of the dashboard.
 
-6. Function Names: 
-   - In "lib/auth.ts": signIn, signOut.
-   - In "lib/projects.ts": createProject, deleteProject.
-   - In "lib/deploy.ts": createDeployment, deleteDeployment.
-   - In "components/ProjectForm.tsx": handleSubmit.
-   - In "components/DeployButton.tsx": handleDeploy.
+5. '../../lib/projects': This is another module that is being imported in the [id].tsx file located in the projects directory of the dashboard.
+
+6. 'yarn run build': This is a command that is being run, which is shared across all files as it is part of the build process.
+
+Please note that without the actual content of the files, it's not possible to provide information about exported variables, data schemas, id names of DOM elements, message names, and function names.
