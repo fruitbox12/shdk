@@ -1,29 +1,18 @@
-import { signIn, signOut, useAuth } from '../lib/auth';
-import styles from '../styles/navbar.module.css';
-import Link from 'next/link';
+import React from 'react';
 import Image from 'next/image';
-import vercelSvg from '../public/vercel.svg';
+import Link from 'next/link';
 
 const Navbar = () => {
-  const { user } = useAuth();
-
   return (
-    <nav className={styles.navbar} id="navbar">
-      <div className={styles.logo}>
-        <Image src={vercelSvg} alt="Vercel Logo" width={36} height={36} />
-        <h1>Vercel Dashboard</h1>
-      </div>
-      <div className={styles.links}>
-        <Link href="/">Home</Link>
-        {user ? (
-          <>
-            <Link href="/dashboard">Dashboard</Link>
-            <button id="signOutButton" onClick={() => signOut()}>Sign Out</button>
-          </>
-        ) : (
-          <button id="signInButton" onClick={() => signIn()}>Sign In</button>
-        )}
-      </div>
+    <nav>
+      <Link href="/">
+        <a>
+          <Image src="/public/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+        </a>
+      </Link>
+      <Link href="/dashboard">
+        <a>Dashboard</a>
+      </Link>
     </nav>
   );
 };
